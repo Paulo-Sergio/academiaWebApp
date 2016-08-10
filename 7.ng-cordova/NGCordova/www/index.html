@@ -32,15 +32,29 @@
       </ion-header-bar>
 
       <ion-content>
+        <!--TOAST-->
         <div ng-click="mostrarToast()">Mostrar Toast</div>
+        <hr>
 
+        <!--ESCRITA E LEITURA DE ARQUIVOS TXT-->
         <button ng-click="gravar()">Gravar Arquivo</button>
         <button ng-click="ler()">Ler Arquivo</button>
-
         <div>
           {{conteudoArquivo}}
         </div>
-        
+        <hr>
+
+        <!--CAMERA-->
+        <button ng-click="tirarFoto()">Tirar Foto</button>
+        <br>
+        <img src="{{imagem}}"/>
+        <hr>
+
+        <!--GEOLOCALIZAÇÃO-->
+        <button ng-click="getLocalizacao()">Localização Atual</button>
+        <br>
+        <div>{{localizacao}}</div>
+
       </ion-content>
     </ion-pane>
   </body>
